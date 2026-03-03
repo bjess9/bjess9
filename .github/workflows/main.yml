@@ -11,20 +11,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate Stats Cards
-        uses: readme-tools/github-readme-stats-action@v1  # or latest version
+      - name: Generate Top Languages Card
+        uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
           options: >-
             username=${{ github.repository_owner }}
             &count_private=true
             &show_icons=true
-            &theme=dracula  # or any theme: radical, dark, etc.
-            &langs_count=10
-            &hide=html,css,tex  # optional: noise filters
+            &hide_border=true
             &layout=compact
+            &langs_count=10
+            &hide=html,css,tex,makefile
+            &theme=transparent  # or remove this line
           path: profile/top-langs.svg
-          token: ${{ secrets.PAT }}  # your private token here!
+          token: ${{ secrets.PAT }}
 
       - name: Commit changes
         run: |
