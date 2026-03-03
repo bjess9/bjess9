@@ -20,7 +20,7 @@ jobs:
             &count_private=true
             &show_icons=true
             &hide_border=true
-            &layout=compact
+            &layout=normal          # <-- change to this (or try donut/pie later)
             &langs_count=10
             &hide=html,css,tex,makefile
           path: profile/top-langs.svg
