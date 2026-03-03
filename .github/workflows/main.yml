@@ -23,9 +23,8 @@ jobs:
             &layout=compact
             &langs_count=10
             &hide=html,css,tex,makefile
-            &theme=transparent  # or remove this line
           path: profile/top-langs.svg
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.STATS_TOKEN }}
 
       - name: Commit changes
         run: |
