@@ -1,3 +1,1 @@
-## Top Languages
-
-<image-card alt="Top Languages" src="profile/top-langs.svg" ></image-card>
+![Top Languages](profile/top-langs.svg)
