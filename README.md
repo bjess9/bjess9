@@ -1,1 +1,1 @@
-![Top Languages](profile/top-langs.svg)
+<image-card alt="My Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bjess9&count_private=true&hide_border=true&layout=compact&langs_count=10&hide=html,css,tex,makefile&show_icons=true" ></image-card>
